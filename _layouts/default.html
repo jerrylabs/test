@@ -1,0 +1,39 @@
+---
+---
+
+<!doctype html>
+
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <link rel="canonical" href="https://www.plevelnaslepo.cz/">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" href="{{'assets/images/favicon.png' | relative_url }}">
+  <title>{{ page.title | default: "Plevel naslepo" }}</title>
+  <meta name="description" content="Kytice z údolí Bystřice">
+  <meta name="author" content="JerryLabs">
+  <link rel="stylesheet" href="{{'assets/css/main.css' | relative_url }}">
+  <!--<link rel="stylesheet" type="text/css" href="{{'assets/css/blanksite.css' | relative_url }}"> -->
+  <meta property="og:title" content="Plevel naslepo">
+  <meta property="og:url" content="https://www.plevelnaslepo.cz/">
+  <meta property="og:image" content="https://www.plevelnaslepo.cz/assets/images/gallery/thumbs/plevel-naslepo23.jpg">
+  <meta property="og:description" content="Kytice z údolí Bystřice">
+
+  <link rel="stylesheet" id="jerrylabs_games-css" href="{{'assets/css/fancybox.css' | relative_url }}" type="text/css" media="all">
+  <script type="text/javascript" src="{{'assets/js/fancybox.umd.js' | relative_url }}"></script>
+
+</head>
+
+<body>
+
+<header>
+  {% include menu.html %}
+</header>
+
+<main class="main {{page.type}}">
+  {{ content | replace: "~", "&nbsp;" }}
+</main>
+
+</body>
+
+</html>
